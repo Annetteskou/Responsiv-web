@@ -1,0 +1,311 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family:"Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #ccbeac;
+  color: #870000;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+
+h2 {
+  font-size: 3.5em;
+  text-align: center;
+  margin: 20px 0;
+  border-bottom: 0.2px solid #870000;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%; 
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu-knap {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #870000;
+}
+
+
+/* pile og dato */
+.event-navigation {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start; /* Flyt indholdet til venstre */
+  gap: 15px; 
+  padding-left: 40px; /* Lidt indrykning fra venstre kant */
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.nav-button {
+  background: none;
+  border: none;
+  font-size: 1.5em;
+  cursor: pointer;
+  color: #870000;
+  font-weight: bold;
+}
+
+.dato-button {
+  background: none;
+  border: 1px solid #b00000;
+  padding: 5px 10px;
+  color: #b00000;
+  cursor: pointer;
+  font-size: 0.9em;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.dato-button:hover {
+  background-color: #870000;
+  color: #fff;
+}
+
+.navigation-text {
+  font-size: 1.1em;
+  color: #870000;
+  font-weight: bold;
+  border-top: 1px solid #870000;
+  padding-top: 5px;
+  margin-left: 10px; /* Ekstra afstand fra knappen */
+}
+
+
+/* Styling af de forskellige events*/
+.event {
+  display: flex;
+  align-items: flex-start; 
+  justify-content: flex-start;
+  width: 70%; /* Centrer sektionen med en bredde på 70% */
+  margin: 20px auto; /* Centerer sektionen horisontalt */
+  padding: 20px;
+  border-bottom: 1px solid #870000; /* Linje under hver event */
+}
+
+/* Styling af det runde billede */
+.event-image {
+  width: 160px; /* Justér størrelsen for at matche designet */
+  height: 160px;
+  border-radius: 50%; /* Gør billedet rundt */
+  object-fit: cover; /* Sørger for, at billedet dækker området uden forvrængning */
+  margin-right: 20px; /* Afstand mellem billede og tekst */
+}
+
+
+.event img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+.event-content {
+  max-width: 500px; /* Begræns tekstområdet for pænt layout */
+} 
+
+.event-content img[alt="Mikrofon"] {
+  margin-left: 420px;
+  width: 120px;
+  height: auto;
+}
+
+.event-content img[alt="Musik noter"] {
+  margin-left: 500px;
+  width: 220px;
+  height: auto;
+}
+
+.event-content img[alt="Vinglas"] {
+  margin-left: 355px;
+  width: 200px;
+  height: auto;
+ 
+}
+
+.event-content p {
+  font-size: 1.2em; 
+  line-height: 1.6; /* Gør teksten mere læsbar */
+  margin-top: 10px; 
+  margin-bottom: 15px; 
+}
+
+
+.event-content h3 {
+  font-size: 2em;
+  color: #870000;
+  margin-bottom: 5px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+/* Styling af læs mere knap til de runde billeder */
+.læs-mere-knap {
+  background: none;
+  border: 3px solid #870000;
+  padding: 2px 15px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 0.8em;
+  font-weight: 600;
+  color: #870000;
+  border-radius: 10px;
+}
+
+/* Pil(videre knap) i bunden af siden */
+.videre {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.forrige span, .next span {
+  color: #870000;
+  font-size: 1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.videre span:hover, .next span:hover {
+  color: #870000;
+}
+
+
+/* Box til ideer */
+.forslag {
+  text-align: center;
+  margin: 60px;
+
+}
+
+.forslag textarea {
+  width: 80%; /* Justér bredden som ønsket */
+  max-width: 600px; /* Sæt en maksimum bredde for større skærme */
+  height: 150px; /* Justér højden som ønsket */
+  padding: 10px;
+  margin: 20px auto; /* Centrerer boksen og tilføjer margin */
+  font-size: 1em;
+  border: 1px solid #b00000;
+  border-radius: 5px;
+  display: block; /* Sørg for, at textarea er et blok-element */
+  background-color: #fff;
+  color: #870000;
+}
+
+.send-knap {
+  background: none;
+  border: 1px solid #870000;
+  padding: 5px 20px;
+  color: #870000;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 50px;
+  font-size: 0.8em;
+}
+
+/* Footer styling */
+footer {
+  display: flex;
+  justify-content: space-between; /* Sørg for, at der er jævn afstand mellem sektionerne */
+  align-items: center; /* Centerer elementerne lodret */
+  padding: 20px 60px;
+  background-color: #ccbeac;
+  color: #060606;
+  font-size: 0.9em;
+  border-top: 1px solid #870000; /* Øverste kant til adskillelse */
+}
+
+footer div {
+  flex: 1; /* Hver sektion får lige meget plads */
+    text-align: center;
+    line-height: 1.6;
+    margin: 0 10px; /* Lidt margin på siderne for hver sektion */
+}
+
+/* Special styling for hver sektion */
+.aabeningstider {
+  text-align: left; /* Juster teksten til venstre */
+  display: flex;
+  flex-direction: column; /* Så overskriften og tiden står under hinanden */
+  gap: 5px; /* Afstand mellem linjerne */
+}
+
+.aabeningstider p {
+  margin: 0; /* Fjerner ekstra margen */
+}
+
+.aabeningstider div {
+  display: flex;
+  justify-content: space-between; /* Fordeler dag og tid til venstre og højre */
+  width: 100px; /* Juster denne værdi for at tilpasse bredden */
+  margin: 0 auto; /* Centerer elementet inden for forældrediv */
+}
+
+.aabeningstider .day {
+  text-align: left;
+  width: 50%; /* Sørger for at dagene står til venstre */
+}
+
+.aabeningstider .time {
+  text-align: right;
+  width: 50%; /* Sørger for at tiderne står til højre */
+}
+/* Nyhedsbrev */
+.nyhedsbrev {
+  text-align: center;
+}
+.nyhedsbrev input[type="email"] {
+  padding: 5px;
+  margin-top: 5px;
+  width: 80%;
+  border: 1px solid #870000;
+  border-radius: 5px;
+  font-size: 0.9em;
+}
+
+.nyhedsbrev button {
+  background: none;
+  border: 1px solid #870000;
+  padding: 5px 20px;
+  color: #870000;
+  cursor: pointer;
+  margin-top: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nyhedsbrev button:hover {
+  background-color: #870000;
+  color: #fff;
+}
+
+.crossaint.mand {
+  flex: 0 0 80px; /* Giver billedet en fast bredde */
+  text-align: right; /* Justerer billedet til højre */
+}
+/* billede i footer */
+.crossaint.mand img {
+  width: 200px; /* Juster størrelsen af billedet efter behov */
+  height: auto;
+}
+
+
