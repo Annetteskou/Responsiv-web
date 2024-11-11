@@ -140,8 +140,7 @@ h1 {
   margin-right: 20px;
   border-radius: 50%; /* Gør billedet rundt */
   object-fit: cover; /* Sørger for, at billedet dækker området uden forvrængning */
-  margin-right: 20px; /* Afstand mellem billede og tekst */
-}
+} 
 
 .event-content {
   max-width: 500px; /* Begræns tekstområdet for pænt layout */
@@ -252,7 +251,7 @@ h1 {
 /* Footer styling */
 footer {
   display: flex;
-  justify-content: space-between; /* Sørg for, at der er jævn afstand mellem sektionerne */
+  justify-content: space-between; /* Jævn afstand mellem sektionerne */
   align-items: center; /* Centerer elementerne lodret */
   padding: 20px 60px;
   background-color: #ccbeac;
@@ -283,8 +282,8 @@ footer div {
 .aabeningstider div {
   display: flex;
   justify-content: space-between; /* Fordeler dag og tid til venstre og højre */
-  width: 100px; /* Juster denne værdi for at tilpasse bredden */
-  margin: 0 auto; /* Centerer elementet inden for forældrediv */
+  width: 100px; 
+  margin: 0 auto; 
 }
 
 .aabeningstider .day {
@@ -299,7 +298,6 @@ footer div {
 /* Nyhedsbrev */
 .nyhedsbrev {
   text-align: center;
-  margin-right: 100px;
 }
 .nyhedsbrev input[type="email"] {
   padding: 5px;
@@ -326,14 +324,262 @@ footer div {
   color: #fff;
 }
 
+/* Billede i footer*/
 .crossaint.mand {
-  flex: 0 0 80px; /* Giver billedet en fast bredde */
   text-align: right; 
 }
-/* billede i footer */
+
 .crossaint.mand img {
   width: 200px; 
   height: auto;
 }
 
+/* Global styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Alata", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
 
+body {
+  background-color: #ccbeac;
+  color: #870000;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+h1 {
+  font-size: 3.5em;
+  text-align: center;
+  margin: 20px 0;
+  border-bottom: 0.2px solid #870000;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Desktop (bredde: over 1024px) */
+@media (min-width: 1024px) {
+  .menu-btn {
+    font-size: 50px;
+    margin-right: 100px;
+  }
+  
+  .event {
+    flex-direction: row;
+    width: 70%;
+  }
+
+  .event-image {
+    width: 250px;
+    height: 250px;
+  }
+
+  .event-content {
+    max-width: 500px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 60px;
+  }
+}
+
+/* Tablet (bredde: 768px - 1024px) */
+@media (min-width: 768px) and (max-width: 1024px) {
+  h1 {
+    font-size: 3em;
+    width: 70%;
+  }
+
+  header {
+    flex-direction: row;
+  }
+
+  .menu-btn {
+    font-size: 40px;
+    margin-right: 50px;
+  }
+
+  .dropdown-content {
+    width: 180px;
+  }
+
+  .event {
+    flex-direction: row;
+    width: 85%;
+    padding: 15px;
+  }
+
+  .event-image {
+    width: 200px;
+    height: 200px;
+  }
+
+  .event-content {
+    max-width: 400px;
+  }
+}
+
+/* Mobil (bredde: under 768px) */
+@media (max-width: 768px) {
+  header img {
+    width: 120px; /* Reducerer logoets størrelse */
+  }
+  
+  h1 {
+    font-size: 2.5em;
+    width: 80%;
+  }
+
+  header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px; /* Lidt ekstra padding for at give luft omkring elementerne */
+  }
+
+  .menu-btn {
+    font-size: 24px; /* Justerer størrelsen om nødvendigt */
+    margin-right: 0; /* Fjern margin, hvis det er nødvendigt */
+    align-self: flex-end; /* Sørg for, at det sidder til højre i flex-containeren */
+  }
+
+  .nav-button {
+    font-size: 1.2em;
+  }
+
+  .dato-button {
+    padding: 5px 15px; /* Justerer padding for mindre knap */
+    font-size: 0.8em;
+  }
+
+  .event-navigation {
+    justify-content: center; /* Centrerer navigationen */
+    padding-left: 0;
+    margin-top: 15px;
+  }
+
+  .event {
+    display: flex;
+    flex-direction: column; /* Laver event-indholdet lodret */
+    align-items: center; /* Centrer indhold */
+    text-align: center; /* Centrer tekst */
+  }
+
+  .event-image {
+    width: 200px; /* Mindre størrelse for et kompakt udseende */
+    height: 200px;
+    margin-bottom: 10px; /* Afstand under billedet */
+  }
+
+  .event-content {
+    font-size: 1em;
+    line-height: 1.5; /* Øger linjehøjden en smule for mere luft */
+    margin: 5px 0;
+  }
+
+  .event-content h3 {
+    font-size: 1.4em;
+    margin: 10px 0; /* Reducerer afstand over og under overskriften */
+  }
+
+  .event-content p {
+    font-size: 1em;
+    margin: 5px 0; /* Mindre lodret afstand */
+  }
+
+  .læs-mere-knap {
+    margin-bottom: 10px; /* Ekstra afstand til ikonet nedenfor */
+  }
+
+  /* Tilpasning af ikoner */
+  .event-content img[alt="Mikrofon"] {
+    width: 70px; /* Mindre størrelse for mikrofonikonet */
+    margin-top: 10px;
+    display: block;
+    margin: 10px auto; /* Centerer ikonet */
+  }
+
+  .event-content img[alt="Musik noter"] {
+    width: 100px; /* Større størrelse for musiknoterne */
+    margin-top: 10px;
+    display: block;
+    margin: 10px auto;
+  }
+
+  .event-content img[alt="Vinglas"] {
+    width: 100px; /* Større størrelse for vinglaset */
+    margin-top: 10px;
+    display: block;
+    margin: 10px auto;
+  }
+
+  /* Kommentar Boks Tilpasning */
+  .forslag textarea {
+    width: 90%; /* Reducer bredden */
+    max-width: 400px;
+    height: 120px;
+    font-size: 0.9em;
+  }
+
+  .send-knap {
+    font-size: 0.75em;
+    padding: 4px 15px;
+  }
+
+  footer {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  footer div {
+    margin: 10px 0;
+  }
+
+  .aabeningstider {
+    text-align: center;
+    line-height: 1.8; /* Øger linjeafstanden for mere luft mellem linjerne */
+    margin: 20px 0; /* Giver luft over og under hele sektionen */
+  }
+  
+  .aabeningstider h3 {
+    margin-top: 20px; /* Ekstra afstand over hver overskrift, hvis du har brug for det */
+  }
+  
+  .aabeningstider p {
+    margin: 10px 0; /* Ekstra afstand over og under hver linje i åbningstiderne */
+  }
+  
+  .nyhedsbrev, .location {
+    margin-top: 30px; /* Giver ekstra luft mellem åbningstider og nyhedsbrevsektionen og mellem nyhedsbrev og location */
+  }
+  
+  .nyhedsbrev input[type="email"] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  
+  .nyhedsbrev button {
+    margin-top: 10px;
+  }
+
+  .lokation {
+    margin-top: 30px; /* Luft mellem nyhedsbrev og location */
+  }
+
+  .crossaint.mand img {
+    width: 150px;
+  }
+}
