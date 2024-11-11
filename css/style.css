@@ -451,7 +451,7 @@ h1 {
   }
 
   .menu-btn {
-    font-size: 24px; /* Justerer størrelsen om nødvendigt */
+    font-size: px; /* Justerer størrelsen om nødvendigt */
     margin-right: 0; /* Fjern margin, hvis det er nødvendigt */
     align-self: flex-end; /* Sørg for, at det sidder til højre i flex-containeren */
   }
@@ -501,7 +501,11 @@ h1 {
   }
 
   .læs-mere-knap {
-    margin-bottom: 10px; /* Ekstra afstand til ikonet nedenfor */
+    font-size: 1em; /* Gør skriften lidt større */
+    padding: 10px 20px; /* Øger padding for en større knap */
+    margin-top: 15px; /* Tilføjer lidt afstand over knappen */
+    border: 3px solid #870000; /* Sikrer, at knaprammen også skiller sig ud */
+    border-radius: 10px; /* Bløder kanterne lidt op */
   }
 
   /* Tilpasning af ikoner */
