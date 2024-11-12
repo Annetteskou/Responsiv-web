@@ -31,7 +31,7 @@
 
 .menu-btn {
     background: rgba(0, 0, 0, 0.5); 
-    color: white;
+    color: none;
     border: none;
     cursor: pointer;
     font-size: 20px;
@@ -274,6 +274,10 @@
         font-size: 18px;
     }
 
+    .spisehal {
+      margin-left: 780px;
+  }
+
     footer {
         padding: 20px 60px;
     }
@@ -281,129 +285,267 @@
 
 /* Mobil-styling (under 768px) */
 @media (max-width: 768px) {
-        .content, .content1 {
-            padding: 15px;
-            font-size: 1em;
-            line-height: 1.6;
-            text-align: left;
-            max-width: 100%;
-            margin: 0 auto;
-        }
-        .content h2 {
-            font-size: 1.2em; /* Reduceret størrelse på underoverskriften */
-            margin-bottom: 15px;
-        }
+
+  .fullscreen-header {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+  .background-video {
+    width: 100vw; 
+    height: auto; 
+    object-fit: cover;
+    margin: 0; /* Fjerner marginen omkring videoen */
+    min-height: 60vh;
+    margin-top: -170px;
+  }
+
+  .content-wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centrerer indholdet */
+    margin-top: -400px; /* Juster om nødvendigt for at minimere mellemrum */
+  }
+
+  .content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: left;
+    color: #333;
+    word-wrap: break-word;
+  }
+
+  .content1 {
+    margin: 10px 0;
+    line-height: 1.5;
+    word-break: break-word; /* Sikrer at ord brydes og ikke tvinges i smalle kolonner */
+    font-size: 1.1em; /* Øg skriftstørrelsen */
+    line-height: 1.8; /* Forøg linjeafstanden for bedre luft mellem linjer */
+    color: #333; /* Mørkere tekstfarve for bedre kontrast */
+    padding: 10px 20px; /* Tilføj lidt ekstra padding for luft omkring teksten */
+    text-align: justify; /* Juster teksten for et mere rent layou */
+    padding-top: 20px; /* Skaber luft over teksten */
+    clear: both; /* Sørger for, at teksten starter under billedet */
+  }
+
+
+  .content h1, .content h2 {
+    font-size: 1.2em; 
+    margin: 10px 0;
+    padding: 0;
+  }
+
+  
+/* Billede justering */
+.spisehal {
+  width: 100%; /* Gør billedet responsive */
+  height: auto; /* Bevarer proportionerne */
+  display: block; /* Fjerner eventuelle float-effekter */
+  margin: 20px auto; /* Tilføjer luft omkring billedet */
+  clear: both; /* Sørger for, at billedet står alene uden overlap */
+  border-radius: 10px; /* Giver en blød kant til billedet */
+}
+
+/* Knappen */
+.button {
+    background-color: #bd7676;
+    color: #000;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: 2px solid #870000;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+    width: 80%;
+    max-width: 300px;
+    margin-top: -120px;
+    margin-bottom: 50px;
     
-        /* Justering af "Book Bord"-knappen */
-        .button {
-            width: 80%;
-            font-size: 1em;
-            padding: 12px;
-            margin: 20px auto;
-            display: block;
-            text-align: center;
-        }
-    
-        .spisehal {
-            width: 100%; /* Fylder hele bredden af skærmen */
-            height: auto;
-            border-radius: 10px; /* Lettere afrunding for et pænere udseende */
-            display: block;
-            margin: 20px 0; /* Lidt afstand til teksten ovenfor og nedenfor */
-        }
-            
+}
 
-        .gaffel {
-            width: 120px; 
-            height: auto;
-            margin-left: 200px;
-            position: relative; /* Fjern absolut positionering for at undgå overlap */
-            margin: 20px auto; /* Centrerer billedet under teksten og tilføjer afstand */
-            display: block; /* Sørger for, at billedet fylder sin egen linje */
-
-        }
-
-        footer {
-            flex-direction: column;
-            padding: 10px;
-          }
+footer {
+   flex-direction: column;
+   padding: 10px;
+}
         
-          footer div {
-            margin: 10px 0;
-          }
+footer div {
+   margin: 10px 0;
+}
         
-          .aabeningstider {
-            text-align: center;
-            line-height: 1.8; /* Øger linjeafstanden for mere luft mellem linjerne */
-            margin: 20px 0; /* Giver luft over og under hele sektionen */
-          }
+.aabeningstider {
+    text-align: center;
+    line-height: 1.8; /* Øger linjeafstanden for mere luft mellem linjerne */
+    margin: 20px 0; /* Giver luft over og under hele sektionen */
+}
+
+.aabeningstider h3 {
+   margin-top: 20px; 
+}
           
-          .aabeningstider h3 {
-            margin-top: 20px; /* Ekstra afstand over hver overskrift, hvis du har brug for det */
-          }
-          
-          .aabeningstider p {
-            margin: 10px 0; /* Ekstra afstand over og under hver linje i åbningstiderne */
-          }
+.aabeningstider p {
+    margin: 10px 0; /* Ekstra afstand over og under hver linje i åbningstiderne */
+}
         
-          .nyhedsbrev, .lokation {
-            margin-top: 30px; /* Giver ekstra luft mellem åbningstider og nyhedsbrevsektionen og mellem nyhedsbrev og location */
-          }
+.nyhedsbrev, .lokation {
+     margin-top: 30px; 
+}
         
-          .nyhedsbrev input[type="email"] {
-            margin-top: 10px;
-            margin-bottom: 10px;
-          }
+.nyhedsbrev input[type="email"] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
         
-          .nyhedsbrev button {
-            margin-top: 10px;
-          }
+ .nyhedsbrev button {
+      margin-top: 10px;
+    }
         
-          .crossaint.mand img {
-            width: 150px;
-          }
-        }
+  .crossaint.mand img {
+      width: 150px;
+    }
 
+    .gaffel {
+      display: none;
+  }
+ }
 
 /* Tablet-styling (768px - 1024px) */
 @media (min-width: 768px) and (max-width: 1024px) {
-    .content {
-        padding: 15px;
-        margin-top: 25px;
-        font-size: 1.5em;
-    }
+  .fullscreen-header {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
 
-    .content h1 {
-        font-size: 2.5em;
-    }
+  .background-video {
+    width: 100vw; 
+    height: auto; 
+    object-fit: cover;
+    margin: 0; /* Fjerner marginen omkring videoen */
+    min-height: 60vh;
+  }
 
-    .content h2 {
-        font-size: 1.3em;
-    }
+  .content-wrapper {
+    position: relative;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center; /* Centrerer indholdet */
+    margin-top: -400px; /* Juster om nødvendigt for at minimere mellemrum */
+  }
 
-    .button {
-        font-size: 24px;
-        padding: 10px 18px;
-        margin-left: 50px;
-    }
+  .content {
+    width: 90%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1em;
+    line-height: 1.6;
+    text-align: left;
+    color: #333;
+    word-wrap: break-word;
+  }
 
-    .menu-btn {
-        font-size: 40px;
-    }
+  .content1 {
+    margin: 10px 0;
+    line-height: 1.5;
+    word-break: break-word; /* Sikrer at ord brydes og ikke tvinges i smalle kolonner */
+    font-size: 1.1em; /* Øg skriftstørrelsen */
+    line-height: 1.8; /* Forøg linjeafstanden for bedre luft mellem linjer */
+    color: #333; /* Mørkere tekstfarve for bedre kontrast */
+    padding: 10px 20px; /* Tilføj lidt ekstra padding for luft omkring teksten */
+    text-align: justify; /* Juster teksten for et mere rent layou */
+    padding-top: 20px; /* Skaber luft over teksten */
+    clear: both; /* Sørger for, at teksten starter under billedet */
+  }
 
-    .dropdown-content {
-        width: 160px;
-        font-size: 18px;
-    }
 
-    footer {
-        padding: 20px 40px;
-    }
+  .content h1, .content h2 {
+    font-size: 1.2em; 
+    margin: 10px 0;
+    padding: 0;
+  }
 
-    .spisehal, .gaffel, .banken {
-        width: 80%;
-        height: auto;
-        margin-left: auto;
-        margin-right: auto;
-    }
+  
+/* Billede justering */
+.spisehal {
+  width: 100%; /* Gør billedet responsive */
+  height: auto; /* Bevarer proportionerne */
+
 }
+
+/* Knappen */
+.button {
+    background-color: #bd7676;
+    color: #000;
+    padding: 15px 30px;
+    font-size: 1.2em;
+    border: 2px solid #870000;
+    border-radius: 5px;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    cursor: pointer;
+    width: 80%;
+    max-width: 300px;
+    margin-top: -120px;
+    margin-bottom: 50px;
+    
+}
+
+footer {
+   flex-direction: column;
+   padding: 10px;
+}
+        
+footer div {
+   margin: 10px 0;
+}
+        
+.aabeningstider {
+    text-align: center;
+    line-height: 1.8; /* Øger linjeafstanden for mere luft mellem linjerne */
+    margin: 20px 0; /* Giver luft over og under hele sektionen */
+}
+
+.aabeningstider h3 {
+   margin-top: 20px; 
+}
+          
+.aabeningstider p {
+    margin: 10px 0; /* Ekstra afstand over og under hver linje i åbningstiderne */
+}
+        
+.nyhedsbrev, .lokation {
+     margin-top: 30px; 
+}
+        
+.nyhedsbrev input[type="email"] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+ }
+        
+ .nyhedsbrev button {
+      margin-top: 10px;
+    }
+        
+  .crossaint.mand img {
+      width: 150px;
+    }
+
+    .gaffel {
+      display: none;
+  }
+ }
