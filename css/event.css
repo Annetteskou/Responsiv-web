@@ -586,16 +586,17 @@ footer div {
     height: 200px;
     padding: 12px; 
     margin: 20px auto; /* Centerer tekstområdet */
-    font-size: 1em;
+    font-size: 1.5em;
     border: 2px solid #870000; 
     border-radius: 5px;
     display: block;
     background-color: #fff;
     color: #870000;
   }
+
   /* Styling til "send"-knap */
   .send-knap {
-    font-size: 1.3em; 
+    font-size: 1.5em; 
     padding: 8px 24px; 
     margin-top: 15px; 
     border: 2px solid #870000; 
@@ -609,7 +610,52 @@ footer div {
     text-align: center; 
     margin-bottom: 10px;
   }
+
+  footer {
+    padding: 10px;
+  }
+
+  footer div {
+    margin: 10px 0;
+  }
+
+  .aabeningstider {
+    text-align: center;
+    line-height: 1.8; /* Øger linjeafstanden for mere luft mellem linjerne */
+    margin: 20px 0; /* Giver luft over og under hele sektionen */
+    font-size: 18px;
+  }
   
+  .aabeningstider h3 {
+    margin-top: 20px; /* Ekstra afstand over hver overskrift, hvis du har brug for det */
+  }
+  
+  .aabeningstider p {
+    margin: 10px 0; /* Ekstra afstand over og under hver linje i åbningstiderne */
+  }
+
+  .nyhedsbrev, .lokation {
+    margin-top: 30px; /* Giver ekstra luft mellem åbningstider og nyhedsbrevsektionen og mellem nyhedsbrev og location */
+    font-size: 18px;
+  }
+
+  .nyhedsbrev input[type="email"] {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 1em;
+  }
+
+  .nyhedsbrev p {
+    font-size: 1.5em;
+  }
+  .nyhedsbrev button {
+    margin-top: 10px;
+    font-size: 1.5em;
+  }
+
+  .crossaint.mand img {
+    width: 150px;
+  }
 }
 
 /* Mobil (bredde: under 768px) */
@@ -717,7 +763,7 @@ footer div {
   }
 
   .send-knap {
-    font-size: 0.75em;
+    font-size: 1em;
     padding: 4px 15px;
   }
 
@@ -752,6 +798,7 @@ footer div {
     text-align: center;
     line-height: 1.8; /* Øger linjeafstanden for mere luft mellem linjerne */
     margin: 20px 0; /* Giver luft over og under hele sektionen */
+    font-size: 18px;
   }
   
   .aabeningstider h3 {
@@ -764,15 +811,21 @@ footer div {
 
   .nyhedsbrev, .lokation {
     margin-top: 30px; /* Giver ekstra luft mellem åbningstider og nyhedsbrevsektionen og mellem nyhedsbrev og location */
+    font-size: 18px;
   }
 
   .nyhedsbrev input[type="email"] {
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 1.5em;
   }
 
+  .nyhedsbrev p {
+    font-size: 1.5em;
+  }
   .nyhedsbrev button {
     margin-top: 10px;
+    font-size: 1.5em;
   }
 
   .crossaint.mand img {
