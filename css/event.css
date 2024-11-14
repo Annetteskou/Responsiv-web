@@ -386,7 +386,7 @@ footer div {
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.1em; /* Justere skrift størrelsen  */
     text-shadow: #fff8f8;
-  border-radius: 10px;
+    border-radius: 10px;
   }
 
   .spisehal {
