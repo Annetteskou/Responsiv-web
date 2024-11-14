@@ -385,7 +385,6 @@ footer div {
     margin-right: 700px;
     font-family: Helvetica, Arial, sans-serif;
     font-size: 1.1em; /* Justere skrift størrelsen  */
-    text-shadow: #fff8f8;
     border-radius: 10px;
   }
 
@@ -754,7 +753,7 @@ footer div {
     padding: 10px 20px; 
     margin-top: 15px; 
     border: 3px solid #870000; 
-    border-radius: 10px; /
+    border-radius: 10px; 
   }
 
   .videre {
