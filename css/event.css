@@ -515,6 +515,11 @@ footer div {
   header {
     flex-direction: row;
   }
+
+  .menu {
+   font-size: 3em;
+}
+
   .menu-btn {
     font-size: 70px; /* Øger skriftstørrelsen på ikonet */
     padding: 20px; /* Tilføjer ekstra padding for større klikområde */
@@ -782,7 +787,6 @@ footer div {
     display: none; /* Skjuler dropdown som standard */
     background-color: #f0e6dc;
     position: absolute;
-    width: 100%;
     top: 50px; /* Placér dropdown under knappen */
     text-align: center;
     z-index: 1001; /* Sørg for, at dropdown er over menuen */

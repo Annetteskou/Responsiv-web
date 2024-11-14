@@ -46,11 +46,9 @@
     position: absolute;
     top: 60px; 
     right: 0;
-    background-color: rgba(240, 230, 220, 0.95); 
     border: 2px solid #870000;
     padding: 20px; 
     width: 250px; 
-    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); 
     z-index: 3;
 }
 
@@ -62,10 +60,6 @@
     font-weight: bold;
     text-decoration: none;
     text-align: left; 
-}
-
-.dropdown-content a:hover {
-    background-color: #d3bcb0; 
 }
 
 .menu:hover .dropdown-content {
@@ -185,6 +179,7 @@
   /* Nyhedsbrev styling */
   .nyhedsbrev {
     text-align: center;
+    font-size: 1.4em;
   }
   
   .nyhedsbrev input[type="email"] {
@@ -194,6 +189,7 @@
     border: 1px solid #870000;
     border-radius: 5px;
     font-size: 0.9em;
+    margin-top: 25px;
   }
   
   .nyhedsbrev button {
@@ -270,6 +266,14 @@
     padding: 0;
   }
 
+  .menu {
+    position: absolute;
+    top: 20px; 
+    right: 20px; 
+    z-index: 2; 
+    margin-right: -100px;
+}
+
   .background-video {
     width: 100vw; 
     height: auto; 
@@ -302,14 +306,14 @@
   .content1 {
     margin: 10px 0;
     line-height: 1.5;
-    word-break: break-word; /* Sikrer at ord brydes og ikke tvinges i smalle kolonner */
-    font-size: 1.1em; /* Øg skriftstørrelsen */
-    line-height: 1.8; /* Forøg linjeafstanden for bedre luft mellem linjer */
-    color: #333; /* Mørkere tekstfarve for bedre kontrast */
-    padding: 10px 20px; /* Tilføj lidt ekstra padding for luft omkring teksten */
-    text-align: justify; /* Juster teksten for et mere rent layou */
-    padding-top: 20px; /* Skaber luft over teksten */
-    clear: both; /* Sørger for, at teksten starter under billedet */
+    word-break: break-word; 
+    font-size: 1.1em; 
+    line-height: 1.8; 
+    color: #333; 
+    padding: 10px 20px; 
+    text-align: justify; 
+    padding-top: 20px; 
+    clear: both; 
     margin-top: 310px;
   }
 
@@ -324,13 +328,13 @@
   
 /* Billede justering */
 .spisehal {
-  width: 90%; /* Gør billedet responsive */
-  height: auto; /* Bevarer proportionerne */
-  display: block; /* Fjerner eventuelle float-effekter */
+  width: 90%; 
+  height: auto; 
+  display: block;
   align-items: center;
-  margin: 20px auto; /* Tilføjer luft omkring billedet */
-  clear: both; /* Sørger for, at billedet står alene uden overlap */
-  border-radius: 10px; /* Giver en blød kant til billedet */
+  margin: 20px auto; 
+  clear: both; 
+  border-radius: 10px; 
   margin-left: 20px;
 }
 
@@ -364,8 +368,8 @@ footer div {
         
 .aabeningstider {
     text-align: center;
-    line-height: 1.8; /* Øger linjeafstanden for mere luft mellem linjerne */
-    margin: 20px 0; /* Giver luft over og under hele sektionen */
+    line-height: 1.8; 
+    margin: 20px 0; 
 }
 
 .aabeningstider h3 {
@@ -373,7 +377,7 @@ footer div {
 }
           
 .aabeningstider p {
-    margin: 10px 0; /* Ekstra afstand over og under hver linje i åbningstiderne */
+   margin: 10px 0; /* Ekstra afstand over og under hver linje i åbningstiderne */
    font-size: 1.2em;
 }
         
